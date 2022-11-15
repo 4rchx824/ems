@@ -1,3 +1,5 @@
+//node convCSVtoJSON.js
+//browserify .\generateRowsChecker.js -o .\bundle.js
 function revealWord(num) {
     var id = "btn" + json[num].number;
     document.getElementById(id).innerHTML = `
