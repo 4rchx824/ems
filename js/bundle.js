@@ -840,7 +840,7 @@ function checkWord(num) {
     var input = document.getElementById(id).value;
     var img = "";
 
-    correctText.includes(input)
+    correctText.includes(input.toLowerCase())
         ? ((img = "success"), (json[num].state = true))
         : ((img = "error"), (json[num].state = false));
 
