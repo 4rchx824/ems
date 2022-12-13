@@ -1,0 +1,18 @@
+{
+  "name": "ems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:update1": "node convCSVtoJSON.js",
+    "watch:update2": "browserify .\\generateRowsChecker.js -o .\\bundle.js",
+    "watch:update3": "node update.js",
+    "update": "concurrently npm:watch:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
